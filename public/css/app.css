@@ -1,147 +1,5 @@
 html,
 
-body {
-  font-family: 'Black Ops One', cursive;
-  overflow-x: hidden;
-  background-color: rgba(0, 0, 0, 1);
-
-}
-
-/*--- navbar settings --*/
-.navbar {
-background: rgba(0, 0, 0, 0.6);
-}
-
-.navbar-brand img {
-  height: 2rem;
-}
-
-/*--- video/title/button settings --*/
-.video-background {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.caption {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.caption h1 {
-  font-size: 3rem;
-  letter-spacing: .2rem;
-  text-shadow: .1rem .1rem .8rem black;
-  padding-bottom: 1rem;
-}
-
-.btn-lg {
-  border-width: small;
-  font-size: 1.1rem;
-  padding: .6rem 1.3rem;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-/*--- Bootstrap Mobile Gutter Fix --*/
-.row, .container-fluid {
-margin-left: 0px!important;
-margin-right: 0px!important;
-}
-
-/*--- Fixed Video Background iOS/Mobile Style--*/
-.video-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#video {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-
-}
-
-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background: url('') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
-}
-
-@media (max-width: 768px) {
-  .caption h1 {
-    font-size: 1.4rem;
-    letter-spacing: .15rem;
-    padding-bottom: .5rem;
-  }
-
-  .btn-lg {
-    font-size: .7rem;
-    padding: .5rem 1rem;
-  }
-
-  .titleL {
-    font-size: .7rem;
-  }
-}
-
-.titleL {
-  text-align: left;
-  letter-spacing: .1rem;
-  text-shadow: .1rem .1rem .8rem black;
-  padding-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.form-label {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-footer {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1rem;
-  margin: 0;
-}
-
-.projectheader {
-  font-size: 1.4rem;
-  letter-spacing: .15rem;
-  padding-bottom: .5rem;
-  padding-top: 5rem;
-}
-
-#contact {
-  padding-bottom: .5rem;
-  padding-top: 5rem;
-}
-
-.msgReply div {
-  padding-left: 50px;
-}
-
-input {
-  float: right;
-}
-
-
-
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
@@ -184592,4 +184450,44 @@ select {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+}
+
+.titleSection {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.titleVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.titleVideo video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.titleContent {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.quoteContent {
+
 }

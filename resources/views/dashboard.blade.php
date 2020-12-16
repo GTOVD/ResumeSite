@@ -7,22 +7,28 @@
         </h2>
     </x-slot>
 
-    <div class="video-background" id="about">
-      <div class="video-wrap">
-        <div id="video">
+    <section class="titleSection">
+      <div class="titleVideo">
           <video id="bgvid" autoplay loop muted playsinline>
             <source src="/img/videoplayback.webm" type="video/webm">
           </video>
-        </div>
       </div>
-    </div>
 
-    <div class="caption text-center">
-      <h1>Thomas Vickers</h1>
+      <div class="titleContent">
+        <h1>Thomas Vickers</h1>
+      <div class="quoteContent">
+        <p> -Code doesn't become software until it has users.</p>
+      </div>
       <!--
       <a class="btn btn-outline-light btn-lg" href="about.php">Résumé</a>
       -->
-    </div>
+      </div>
+    </section>
 
+    <div class="">
+      <h1>Thomas Vickers</h1>
+    <div class="">
+      <p> -Code doesn't become software until it has users.</p>
+    </div>
 
 </x-app-layout>
