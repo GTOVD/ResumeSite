@@ -16,13 +16,14 @@
 
       <div class="titleContent">
         <h1>Thomas Vickers</h1>
+      </div>
       <div class="quoteContent">
         <p> -Code doesn't become software until it has users.</p>
       </div>
       <!--
       <a class="btn btn-outline-light btn-lg" href="about.php">Résumé</a>
       -->
-      </div>
+
     </section>
 
     <div class="">

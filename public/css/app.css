@@ -184478,16 +184478,33 @@ select {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .titleContent {
   position: absolute;
-  top: 40%;
+  top: 43%;
   width: 100%;
   text-align: center;
   z-index: 10;
+  font-family: 'Black Ops One', cursive;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .quoteContent {
-
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  font-family: 'Black Ops One', cursive;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
 }
