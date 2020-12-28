@@ -184508,3 +184508,21 @@ select {
   padding-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
 }
+
+.gradient {
+  background: rgb(85,85,85);
+  background: linear-gradient(0deg, rgba(85,85,85,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#footericon {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+.titleL {
+  text-align: left;
+  letter-spacing: .1rem;
+  padding-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
